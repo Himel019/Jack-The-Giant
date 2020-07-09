@@ -53,6 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Background Scripts\BackgroundScaler.cs" />
+     <Compile Include="Assets\Scripts\Cloud Controller Scripts\CloudCollector.cs" />
+     <Compile Include="Assets\Scripts\Cloud Controller Scripts\CloudSpawner.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Player.cs" />
      <None Include="Assets\Font\readme.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
