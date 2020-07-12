@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cloud
   - DeadlyCloud
+  - Background
   layers:
   - Default
   - TransparentFX
