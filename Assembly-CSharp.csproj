@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Game Controller\OptionsController.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerBounds.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerScore.cs" />
      <None Include="Assets\Font\readme.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Work/Codes/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

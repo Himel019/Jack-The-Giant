@@ -42,4 +42,8 @@ public class CameraMovement : MonoBehaviour
         }
         maxSpeed += 0.0005f;
     }
+
+    public void IsCameraMoving(bool value) {
+        moveCamera = value;
+    }
 }
