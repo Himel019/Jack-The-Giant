@@ -8,6 +8,8 @@ TagManager:
   - DeadlyCloud
   - Background
   - Bounds
+  - Life
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -50,6 +52,9 @@ TagManager:
     locked: 0
   - name: Clouds
     uniqueID: 547140659
+    locked: 0
+  - name: Collectables
+    uniqueID: 2236843417
     locked: 0
   - name: Player
     uniqueID: 2751123729

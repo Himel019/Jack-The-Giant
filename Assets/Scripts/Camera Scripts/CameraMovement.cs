@@ -40,7 +40,7 @@ public class CameraMovement : MonoBehaviour
         if(speed > maxSpeed) {
             speed = maxSpeed;
         }
-        maxSpeed += 0.0005f;
+        maxSpeed += 0.00005f;
     }
 
     public void IsCameraMoving(bool value) {

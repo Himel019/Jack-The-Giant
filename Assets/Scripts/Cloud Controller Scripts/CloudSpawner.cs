@@ -23,6 +23,8 @@ public class CloudSpawner : MonoBehaviour
         CreateClouds();
 
         player = GameObject.Find("Player");
+
+        DisableCollectables();
     }
 
     // Start is called before the first frame update
@@ -152,9 +154,34 @@ public class CloudSpawner : MonoBehaviour
 
                         clouds[i].transform.position = temp;
                         clouds[i].SetActive(true);
+
+                        int random = Random.Range(0, collectables.Length);
+
+                        if(clouds[i].tag != "DeadlyCloud") {
+                            if(!collectables[random].activeInHierarchy) {
+                                Vector3 temp2 = clouds[i].transform.position;
+                                temp2.y += 0.7f;
+
+                                if(collectables[random].tag == "Life") {
+                                    if(PlayerScore.lifeCount < 2) {
+                                        collectables[random].transform.position = temp2;
+                                        collectables[random].SetActive(true);
+                                    }
+                                } else {
+                                    collectables[random].transform.position = temp2;
+                                    collectables[random].SetActive(true);
+                                }
+                            }
+                        }
                     }
                 }
             }
+        }
+    }
+
+    private void DisableCollectables() {
+        for(int i = 0; i < collectables.Length; i++) {
+            collectables[i].SetActive(false);
         }
     }
 }
