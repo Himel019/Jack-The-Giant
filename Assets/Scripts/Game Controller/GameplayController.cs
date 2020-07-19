@@ -14,9 +14,18 @@ public class GameplayController : MonoBehaviour
     private Text coinText;
     [SerializeField]
     private Text lifeText;
+    [SerializeField]
+    private Text gameOverScoreText;
+    [SerializeField]
+    private Text gameOverCoinText;
 
     [SerializeField]
     private GameObject pausePanel;
+    [SerializeField]
+    private GameObject gameOverPanel;
+
+    [SerializeField]
+    private GameObject readyButton;
 
     // Start is called before the first frame update
     void Awake()
@@ -24,10 +33,35 @@ public class GameplayController : MonoBehaviour
         MakeInstance();
     }
 
+    void Start() {
+        Time.timeScale = 0f;
+    }
+
     private void MakeInstance() {
         if(instance == null) {
             instance = this;
         }
+    }
+
+    public void GameOverShowPanel(int finalScore, int finalCoinScore) {
+        gameOverPanel.SetActive(true);
+        gameOverScoreText.text = finalScore.ToString();
+        gameOverCoinText.text = finalCoinScore.ToString();
+        StartCoroutine(GameOverLoadMainMenu());
+    }
+
+    IEnumerator GameOverLoadMainMenu() {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("1_MainMenu");
+    }
+
+    public void PlayerDiedRestartTheGame() {
+        StartCoroutine(PlayerDiedRestart());
+    }
+
+    IEnumerator PlayerDiedRestart() {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("4_GameScene");
     }
 
     public void SetScore(int score) {
@@ -40,6 +74,11 @@ public class GameplayController : MonoBehaviour
 
     public void SetLifeScore(int lifeScore) {
         lifeText.text = "x" + lifeScore;
+    }
+
+    public void StartTheGame() {
+        Time.timeScale = 1f;
+        readyButton.SetActive(false);
     }
 
     public void PauseTheGame() {

@@ -70,6 +70,8 @@ public class PlayerScore : MonoBehaviour
 
             transform.position = new Vector3(500f, 500f, 0);
             lifeCount--;
+
+            GameManager.instance.CheckGameStatus(scoreCount, coinCount, lifeCount);
         }
     }
 }
