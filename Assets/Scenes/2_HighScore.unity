@@ -146,8 +146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 77.8, y: -616.3}
-  m_SizeDelta: {x: 521.96765, y: 142.93167}
+  m_AnchoredPosition: {x: 92.1, y: -616.3}
+  m_SizeDelta: {x: 493.38007, y: 142.93167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &194110838
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10000000000
+  m_Text: 1000000000
 --- !u!222 &194110839
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -741,6 +741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0e5eb2dadde5aa4fa64aa4a312427a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 262284777}
+  coinText: {fileID: 194110838}
 --- !u!4 &2107159023
 Transform:
   m_ObjectHideFlags: 0

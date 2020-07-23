@@ -38,7 +38,7 @@ public static class PlayerPreferences
     }
 
     // Method for setting easy difficulty state
-    public static void SetEasyDifficulty(int state) {
+    public static void SetEasyDifficultyState(int state) {
         PlayerPrefs.SetInt(PlayerPreferences.EasyDifficulty, state);
     }
 
@@ -48,7 +48,7 @@ public static class PlayerPreferences
     }
 
     // Method for setting medium difficulty state
-    public static void SetMediumDifficulty(int state) {
+    public static void SetMediumDifficultyState(int state) {
         PlayerPrefs.SetInt(PlayerPreferences.MediumDifficulty, state);
     }
 
@@ -58,7 +58,7 @@ public static class PlayerPreferences
     }
 
     // Method for setting hard difficulty state
-    public static void SetHardDifficulty(int state) {
+    public static void SetHardDifficultyState(int state) {
         PlayerPrefs.SetInt(PlayerPreferences.HardDifficulty, state);
     }
 

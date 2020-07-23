@@ -11,11 +11,27 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     private float maxSpeed = 5f;
 
+    private float easySpeed = 4.5f;
+    private float mediumSpeed = 5f;
+    private float hardSpeed = 5.4f;
+
     private bool moveCamera;
 
     // Start is called before the first frame update
     void Start()
     {
+        if(PlayerPreferences.GetEasyDifficultyState() == 1) {
+            maxSpeed = easySpeed;
+        }
+
+        if(PlayerPreferences.GetMediumDifficultyState() == 1) {
+            maxSpeed = mediumSpeed;
+        }
+
+        if(PlayerPreferences.GetHardDifficultyState() == 1) {
+            maxSpeed = hardSpeed;
+        }
+
         moveCamera = true;
     }
 

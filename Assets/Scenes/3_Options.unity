@@ -365,7 +365,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 603677068}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1022043450}
+        m_MethodName: MediumDifficulty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &603677068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,7 +489,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 724771101}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1022043450}
+        m_MethodName: EasyDifficulty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &724771101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,6 +703,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a74a41b293cf204f97f52d0e58632fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easySign: {fileID: 1827573764}
+  mediumSign: {fileID: 1602475469}
+  hardSign: {fileID: 817570554}
 --- !u!4 &1022043451
 Transform:
   m_ObjectHideFlags: 0
@@ -1189,7 +1214,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1856536976}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1022043450}
+        m_MethodName: HardDifficulty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1856536976
 MonoBehaviour:
   m_ObjectHideFlags: 0
