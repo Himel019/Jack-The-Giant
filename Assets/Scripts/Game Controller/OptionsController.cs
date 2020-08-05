@@ -82,6 +82,7 @@ public class OptionsController : MonoBehaviour
     }
 
     public void GoToMainMenu() {
-        SceneManager.LoadScene("1_MainMenu");
+        //SceneManager.LoadScene("1_MainMenu");
+        SceneFader.instance.LoadLevel("1_MainMenu");
     }
 }

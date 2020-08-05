@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5652679497334624252}
   - component: {fileID: 5652679497334624248}
   - component: {fileID: 5652679497334624251}
-  - component: {fileID: 3288520107327881416}
   - component: {fileID: 254742863757635743}
   - component: {fileID: 6723313958351361216}
+  - component: {fileID: 1456778577360038318}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 5652679497334624255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.55, y: 1.55, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -151,20 +151,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67263794, y: 1.1824732}
   m_EdgeRadius: 0
---- !u!114 &3288520107327881416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5652679497334624255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4073ba3ca431e0743938f47fe531b719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  maxSpeed: 10
 --- !u!114 &254742863757635743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,3 +177,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinClip: {fileID: 8300000, guid: 3aefbe4dc84cb5a40984eddeb9fa833c, type: 3}
   lifeClip: {fileID: 8300000, guid: 630c1eb221149ce41a899ef144a86177, type: 3}
+--- !u!114 &1456778577360038318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5652679497334624255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfaea823de0ec184d85f82968f84fac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  maxSpeed: 10
