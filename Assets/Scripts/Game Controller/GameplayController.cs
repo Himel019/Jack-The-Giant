@@ -26,6 +26,8 @@ public class GameplayController : MonoBehaviour
 
     [SerializeField]
     private GameObject readyButton;
+    [SerializeField]
+    private GameObject pauseButton;
 
     // Start is called before the first frame update
     void Awake()
@@ -44,6 +46,7 @@ public class GameplayController : MonoBehaviour
     }
 
     public void GameOverShowPanel(int finalScore, int finalCoinScore) {
+        pauseButton.SetActive(false);
         gameOverPanel.SetActive(true);
         gameOverScoreText.text = finalScore.ToString();
         gameOverCoinText.text = finalCoinScore.ToString();
@@ -52,6 +55,7 @@ public class GameplayController : MonoBehaviour
 
     IEnumerator GameOverLoadMainMenu() {
         yield return new WaitForSeconds(3f);
+        GoogleAdMobScript.instance.ShowRewardBasedVideoAd();
         //SceneManager.LoadScene("1_MainMenu");
         SceneFader.instance.LoadLevel("1_MainMenu");
     }

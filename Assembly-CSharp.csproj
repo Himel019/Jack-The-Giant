@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Ads Controller\GoogleAdMobScript.cs" />
      <Compile Include="Assets\Scripts\Background Scripts\BackgroundCollector.cs" />
      <Compile Include="Assets\Scripts\Background Scripts\BackgroundScaler.cs" />
      <Compile Include="Assets\Scripts\Background Scripts\BackgroundSpawner.cs" />
@@ -76,19 +77,19 @@
      <Compile Include="Assets\Scripts\Scene Fader Scripts\SceneFader.cs" />
      <None Include="Assets\Font\readme.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/Work/Codes/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>E:/Work/Codes/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>E:/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>E:/Work/Codes/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>E:/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/Work/Codes/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>E:/Work/Codes/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>E:/Unity/Jack The Giant/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Program Files/2018.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -289,7 +290,7 @@
  <HintPath>D:/Program Files/2018.4.23f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>E:/Work/Codes/Unity/Jack The Giant/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>E:/Unity/Jack The Giant/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Program Files/2018.4.23f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -636,6 +637,12 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>D:/Program Files/2018.4.23f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="GoogleMobileAds.csproj">
+      <Project>{31B81618-18BB-A413-60E9-7208ACF48E57}</Project>      <Name>GoogleMobileAds</Name>    </ProjectReference>
+    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
+      <Project>{EDB56BBD-8EB9-CE36-4CED-3C05F6B60546}</Project>      <Name>GoogleMobileAds.Editor</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

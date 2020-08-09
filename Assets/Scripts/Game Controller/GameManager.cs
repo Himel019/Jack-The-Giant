@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
 
     private void LevelWasLoaded(Scene scene, LoadSceneMode mode) {
         if(scene.name == "4_GameScene") {
+            GoogleAdMobScript.instance.CloseBannerAd();
+
             if(gameRestartedAfterPlayerDied) {
                 GameplayController.instance.SetScore(score);
                 GameplayController.instance.SetCoinScore(coinScore);
@@ -49,6 +51,14 @@ public class GameManager : MonoBehaviour
                 PlayerScore.scoreCount = 0;
                 PlayerScore.coinCount = 0;
                 PlayerScore.lifeCount = 2;
+            }
+        }
+
+        if(scene.name == "1_MainMenu" || scene.name == "2_HighScore" || scene.name == "3_Options" ) {
+            if(Random.Range(0, 10) > 5) {
+                GoogleAdMobScript.instance.ShowInterstitialAd();
+            } else {
+                GoogleAdMobScript.instance.ShowBannerAd();
             }
         }
     }

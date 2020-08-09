@@ -11,9 +11,9 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     private float maxSpeed = 5f;
 
-    private float easySpeed = 4.5f;
-    private float mediumSpeed = 5f;
-    private float hardSpeed = 5.4f;
+    private float easySpeed = 3.5f;
+    private float mediumSpeed = 4f;
+    private float hardSpeed = 4.5f;
 
     private bool moveCamera;
 
@@ -56,7 +56,7 @@ public class CameraMovement : MonoBehaviour
         if(speed > maxSpeed) {
             speed = maxSpeed;
         }
-        maxSpeed += 0.00005f;
+        maxSpeed += 0.000000005f;
     }
 
     public void IsCameraMoving(bool value) {
