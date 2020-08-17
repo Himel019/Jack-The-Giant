@@ -63,7 +63,7 @@ public class PlayerScore : MonoBehaviour
             GameplayController.instance.SetLifeScore(lifeCount);
             
             AudioSource.PlayClipAtPoint(lifeClip, transform.position);
-            other.gameObject.SetActive(true);
+            other.gameObject.SetActive(false);
         } else if(other.tag == "Bounds" || other.tag == "DeadlyCloud") {
             cameraScript.IsCameraMoving(false);
             countScore = false;

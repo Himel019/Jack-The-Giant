@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 1
-  controlID: 18
+  controlID: 155
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
-  controlID: 130
+  controlID: 106
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 19
+  controlID: 156
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,8 +199,8 @@ MonoBehaviour:
     y: 0
     width: 343
     height: 354
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
-  controlID: 20
+  controlID: 157
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 21
+  controlID: 158
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -342,8 +342,8 @@ MonoBehaviour:
     y: 0
     width: 599
     height: 354
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -399,14 +399,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 0.25157896
       e01: 0
       e02: 0
-      e03: -174
+      e03: 2.421051
       e10: 0
-      e11: 1
+      e11: 0.25157896
       e12: 0
-      e13: 18
+      e13: 88.106316
       e20: 0
       e21: 0
       e22: 1
@@ -448,10 +448,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: c1beacb9c862c0440b1833bea19e6a67,
+  m_AnimatorController: {fileID: 9100000, guid: 6f6ab35eb7f025e4c9cca80ffd827caf,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107061062493754102, guid: c1beacb9c862c0440b1833bea19e6a67,
+  - m_Target: {fileID: 1107024698061894196, guid: 6f6ab35eb7f025e4c9cca80ffd827caf,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -588,20 +588,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Unity\Jack The Giant
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 64}
-    m_SelectedIDs: 44280000
-    m_LastClickedID: 10308
-    m_ExpandedIDs: 000000001828000044280000402b000000ca9a3b
+    m_SelectedIDs: 342d0000
+    m_LastClickedID: 11572
+    m_ExpandedIDs: 00000000f6290000222a0000b42b0000262d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -629,7 +629,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001828000044280000cc2800001629000044290000d4290000b62a0000402b0000
+    m_ExpandedIDs: 00000000f6290000222a0000b42b0000262d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -750,7 +750,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e8e3ffff10e4ffff28e4fffface4ffffb4e4ffffbce4ffffc4e4ffff08e6ffff30e6ffff4ae6ffff0ee8ffff18e8ffff24e8ffff2ce8ffff74e9ffffe6ebffff82edffffbaf3ffffd0f4fffff8f4ffff12f5ffffc4f6ffffcef6ffffdaf6ffffe2f6ffffdefbffff
+      m_ExpandedIDs: 2ee9ffff56e9ffff70e9ffff82ecffff8cecffff98ecffffa0ecffff14f0ffff26f0ffffbaf9ffffbafbffffd82d0000162e00003e2f0000ae2f0000e82f000006300000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -806,9 +806,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.729779, y: -0.4720535, z: -0.078125}
+    m_Target: {x: -7.052774, y: -6.030629, z: -0.078125}
     speed: 2
-    m_Value: {x: -7.729779, y: -0.4720535, z: -0.078125}
+    m_Value: {x: -7.052774, y: -6.030629, z: -0.078125}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
